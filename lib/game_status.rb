@@ -40,7 +40,6 @@ WIN_COMBINATIONS = [
     board.all {|index| index == "X" || index == "O"}
   end
   
-  
   def draw?(board)
     if !won?(board) && full?(board)
       return true 
@@ -63,7 +62,7 @@ WIN_COMBINATIONS = [
     index = []
     index = won?(board)
     if index == false 
-      return "O"
+      return nil
     else
       if board[index[0]] == "X"
         return nil
