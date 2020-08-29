@@ -22,8 +22,6 @@ WIN_COMBINATIONS = [
      index_0 = win_combo[0]
     index_1 = win_combo[1]
     index_2 = win_combo[2]
-    index_3 = win_combo[3]
-    index_4 = win_combo[4]
     
     position_1 = board[index_0]
     position_2 = board[index_1]
