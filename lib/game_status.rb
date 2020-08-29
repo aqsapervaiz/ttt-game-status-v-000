@@ -35,14 +35,12 @@ WIN_COMBINATIONS = [
     }
     return false 
   end
-  
-  #def full method 
+ 
   
   def full?(board)
     board.all {|index| index == "X" || index == "O"}
   end
   
-  #def draw board
   
   def draw?(board)
     if !won?(board) && full?(board)
@@ -52,7 +50,6 @@ WIN_COMBINATIONS = [
     end
   end
   
-  #def over? method
   
   def over?(board)
     if won?(board) || full?(board) || draw?(board)
@@ -62,7 +59,6 @@ WIN_COMBINATIONS = [
     end
   end
   
-  #def winner
   
   def winner (board)
     index = []
